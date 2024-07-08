@@ -39,7 +39,7 @@ const Table = () => {
     });
   }, [resdata]);
 
-  console.log(resdata);
+  // console.log(resdata);
 
   return (
     <>
@@ -61,7 +61,7 @@ const Table = () => {
                 <td>
                   {val.titles.length > 0 ? val.titles.join(", ") : "None"}
                 </td>
-                <td>{swornData[key] ? swornData[key].join(', ') : 'None'}</td>
+                <td>{swornData[key] ? swornData[key].join(', ') : "None"}</td>
               </tr>
             );
           })}
